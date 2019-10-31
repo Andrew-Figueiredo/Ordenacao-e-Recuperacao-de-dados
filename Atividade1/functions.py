@@ -13,7 +13,7 @@ def right(i):
 def max_heapify(A, i, size_heap ):
     l = left(i)
     r = right(i)
-    if l<= size_heap and A[l] > A[i] :
+    if l <= size_heap and A[l] > A[i] :
         best = l
     else:
         best = i
