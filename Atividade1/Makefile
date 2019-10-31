@@ -1,6 +1,6 @@
-run:
+run1:
 	@echo " "
 	
-	@python main.py 
+	@python main.py instancias-num\num.1000.1.in 
 	@echo " "
-	@echo "Caso deseje alterar o vetor, Abrir o arquivo main.py"
+	@echo "colocar as instancias "
