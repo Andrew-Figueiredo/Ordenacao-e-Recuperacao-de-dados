@@ -1,12 +1,17 @@
-from functions import heapSort,max_heapify,build_max_heap
-   
-A = [ 0,27, 17, 3, 16, 13, 10, 15, 7 , 12, 4, 8, 9, 0]
-#A = [0,4,1,3,2,16,9,10,14,8,7]
-#A = [0,8,9,7,16,10,14]
-print(A)
-#a,b = build_max_heap(A)
-A = heapSort(A)
-# A = max_heapify(A,3)
+from teste import test1,test2
 
+vetor = [ 0, 3, 5, 2, 7, 13, 1, 15, 10, 4, 8]
 
-print(A)
+if __name__ == "__main__":
+    print("Qual exemplo voce quer chamar? ")
+    print("1) Heap Máximo. ")
+    print("2) HeapSort ")
+    op = int(input("\nDigite aqui: "))
+
+    if op == 1 :
+        test1(vetor)
+    elif op == 2 :
+        test2(vetor)
+    else:
+        print("Opção Invalida!")
+

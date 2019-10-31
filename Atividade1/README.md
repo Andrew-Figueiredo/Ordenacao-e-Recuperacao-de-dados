@@ -13,3 +13,5 @@ Este Repositório tem fim de mostrar os codigos da disciplina de ordenação e r
  - *max_heapify(A, i, size_heap) :* Efetua uma reestruturação no vetor *A* que faz todo arranjo - considerando a posição *i* como pai - se torna uma heap máximo
  - *build_max_heap(A) :* Cria, a partir de um arranjo *A*, uma heap Máximo
  - *heapSort(A) :*  Ordena o arranjo em ordem crescente.
+
+**Obs:** Foi adicionado o *0* como primeiro elemento dos vetores pelo fato de Python iniciar sua contagem ed vetores no 0. Ex: vetor = [0, 0, 1, 2, 3, ...].
