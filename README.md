@@ -6,4 +6,4 @@ Este Repositório tem fim de mostrar os codigos da disciplina de ordenação e r
     
     Cada atividade será publicada em ordem cronológica. Cujo as atividades já concluidas são:
 
-    1 - Atividade 1 - ofertada no dia 24 de outubro de 2019
+    1 - Atividade 1 - ofertada no dia 24 de outubro de 2019 - **OKAY**
