@@ -1,6 +1,6 @@
-def swapPositions(list1, pos1, pos2): 
-    list1[pos1], list1[pos2] = list1[pos2], list1[pos1] 
-    return list1
+def swapPositions(A, pos1, pos2): 
+    A[pos1], A[pos2] = A[pos2], A[pos1] 
+    return A
 def dad(i):
     return int(i/2)
 
@@ -10,7 +10,7 @@ def left(i):
 def right(i):
     return int(i*2 + 1)
 
-def max_heapify(A, i,size_heap ):
+def max_heapify(A, i, size_heap ):
     l = left(i)
     r = right(i)
     if l<= size_heap and A[l] > A[i] :
