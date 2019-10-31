@@ -1,5 +1,6 @@
 from teste import test1,test2
 
+# Pode ser feito alteração no vetor
 vetor = [ 0, 3, 5, 2, 7, 13, 1, 15, 10, 4, 8]
 
 if __name__ == "__main__":
