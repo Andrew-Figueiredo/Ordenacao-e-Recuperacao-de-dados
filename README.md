@@ -1,5 +1,6 @@
 # UFPB - Centro de Informática
-Este Repositório tem fim de mostrar os codigos da disciplina de ordenação e recuperação de dados ministrada no centro de informatica - UFPB
+Este Repositório tem fim de mostrar os codigos da disciplina de ordenação e recuperação de dados
+ministrada no centro de informatica - UFPB
 ## Ordenação e Recuperação de dados
 
     Este repositorio tem como objetivo publicas as atividades a está cadeira. Cada atividade será publicada em ordem cronológica. Cujo as atividades já concluidas são:
