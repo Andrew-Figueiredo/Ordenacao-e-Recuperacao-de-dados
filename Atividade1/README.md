@@ -19,11 +19,10 @@ Este Repositório tem fim de mostrar os codigos da disciplina de ordenação e r
  - test1().
  - test2().
 
-    Para a execução do código basta digitar *"make run"* e é necessário a versão do Python 3.7.3 para a execução do código. 
+    Para a execução do código basta digitar *"make run (nome do arquivo)"* e é necessário a versão do Python 3.7.3 para a execução do código. 
 
 
 **Obs:** Foi adicionado o *0* como primeiro elemento dos vetores pelo fato de Python iniciar sua contagem ed vetores no 0. Ex: vetor = [0, 0, 1, 2, 3, ...].
 
 **Obs2**: Caso queira alterar o vetor ele se encontra no arquivo main.py
 
-**Obs3**: Devido ao adicionar as instancias em cima da hora, não pude atualizar o MakeFile, portanto a exeução segue como "main (nome do arquivo)"
