@@ -19,9 +19,10 @@ def test1(ex1):
         print("\nAntes:")
         print (ex1[1:size])
 
-        A = max_heapify(ex1,x,size-1)
+        ex1 = max_heapify(ex1,x,size-1)
         print(" \nApós a operação Max_Heapify(Vetor, "+ str(x)+").")
-        print(A[1:size])
+        print(ex1[1:size])
+        
 
 def test2(ex2):
     

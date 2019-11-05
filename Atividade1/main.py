@@ -16,7 +16,8 @@ def readInstance(filePath):
 
 def main():
     try:
-        vetor = readInstance(sys.argv[1])
+        name = input("Qual Arquivo deseja Usar:")
+        vetor = readInstance("instancias-num/" + name)
         os.system('cls') or None
         print("Qual exemplo voce quer chamar? ")
         print("1) Heap Máximo. ")

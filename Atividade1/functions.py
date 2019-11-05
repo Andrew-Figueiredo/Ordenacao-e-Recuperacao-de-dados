@@ -25,6 +25,21 @@ def max_heapify(A, i, size_heap ):
         max_heapify(A,best,size_heap)
     return A
 
+def min_heapify(A, i, size_heap ):
+    l = left(i)
+    r = right(i)
+    if l <= size_heap and A[l] > A[i] :
+        best = i
+    else:
+        best = l
+    
+    if r >= size_heap and A[r] < A[best] :
+        best = r
+    if best != i :
+        A = swapPositions(A,i,best)
+        min_heapify(A,best,size_heap)
+    return A
+
 def build_max_heap(A):
     length = len(A)-1
     size_heap = length
@@ -39,3 +54,5 @@ def heapSort(A):
         size_heap -= 1
         max_heapify(A,1,size_heap)
     return A
+
+#def heap_maximun(A):
