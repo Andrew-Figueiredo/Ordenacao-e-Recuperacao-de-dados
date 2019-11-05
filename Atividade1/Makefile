@@ -7,3 +7,4 @@ run:
 
 del:
 	@rm -r  __pycache__
+	@clear
