@@ -24,5 +24,18 @@ Este Repositório tem fim de mostrar os codigos da disciplina de ordenação e r
 
 **Obs:** Foi adicionado o *0* como primeiro elemento dos vetores pelo fato de Python iniciar sua contagem ed vetores no 0. Ex: vetor = [0, 0, 1, 2, 3, ...].
 
-**Obs2**: Caso queira alterar o vetor ele se encontra no arquivo main.py
+## Atividade 02 - Implementar Heap-maximun, Max-Heap-Insert, Heap-Extract-Max e Heap-Increase-Key
 
+    Os condigos de cada funções foram implementados no arquivo *function.py* com suas determinadas objetivos:
+
+    - HEAP-MAXIMUN(A):
+	retorna o elemento de A com maior valor
+
+    - MAX-HEAP-INSERT(A, x)
+    insere o elemento x no conjunto A.
+    
+    - HEAP-EXTRACT-MAX(A)
+	remove e retorna o elemento A de maior chave
+
+    - HEAP-INCREASE-KEY(A, i, x) 
+	aumenta o valor da chave do elemento x para o novo valor e que se presume ser maior que o valor atual de x

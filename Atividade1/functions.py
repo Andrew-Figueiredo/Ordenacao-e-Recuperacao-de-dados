@@ -1,6 +1,9 @@
+from math import inf
+
 def swapPositions(A, pos1, pos2): 
     A[pos1], A[pos2] = A[pos2], A[pos1] 
     return A
+    
 def dad(i):
     return int(i/2)
 
@@ -55,4 +58,28 @@ def heapSort(A):
         max_heapify(A,1,size_heap)
     return A
 
-#def heap_maximun(A):
+def heap_maximun(A):
+    return A[1]
+
+def heap_extract_max(A):
+    size_heap = len(A)-1
+    if (size_heap < 1):
+        return print("heap underflow")
+    max = A[1]
+    A[1] = A[size_heap]
+    size_heap-=1
+    A = max_heapify(A,1,size_heap)
+    return max
+
+def heap_increase_key(A,i,key):
+    if(key < A[i]) :
+        return print( "nada a ser feito")
+    A[i] = key
+    while(i > 1 and A[ dad(i) ] < A[ i ]):
+        swapPositions(A, A[i], A[ dad(i) ])
+        i = dad(i)
+def max_heap_insert(A,key):
+    size_heap = len(A)-1
+    size_heap += 1
+    A[size_heap] = -inf
+    heap_increase_key(A,size_heap,key)

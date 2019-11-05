@@ -1,7 +1,6 @@
 from teste import test1,test2
 import os
 import sys
-# Pode ser feito alteração no vetor
 def readInstance(filePath):
 
     f = open(filePath,"r")
@@ -19,11 +18,15 @@ def main():
         name = input("Qual Arquivo deseja Usar:")
         vetor = readInstance("instancias-num/" + name)
         os.system('cls') or None
+
         print("Qual exemplo voce quer chamar? ")
         print("1) Heap Máximo. ")
         print("2) HeapSort ")
+
         op = int(input("\nDigite aqui: "))
+        
         os.system('cls') or None
+        
         if op == 1 :
             test1(vetor)
         elif op == 2 :
