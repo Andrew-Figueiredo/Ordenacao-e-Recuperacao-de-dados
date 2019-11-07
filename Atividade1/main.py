@@ -1,6 +1,7 @@
 from teste import test1,test2
 import os
 import sys
+
 def readInstance(filePath):
 
     f = open(filePath,"r")
