@@ -1,19 +1,24 @@
-
+import numpy as np
 
 def readInstance(filePath):
 
     f = open(filePath,"r")
     size_vertices = int(f.readline())
-    Mat = []
+    Mat = np.zeros((size_vertices,size_vertices))
+    print(Mat)
     for i in range(size_vertices):
+        k = 0
         l = f.readline()
-        for j in range(size_vertices):
-            if i!=j :
-                n = int(l.split()[j])
-                Mat.append([i][n])
+        for j in range(i+1,size_vertices):
+            if i!=j:
+                
+                Mat[i][j] = int(l.split()[j])
+                k+=1
+                print(Mat)
+            
             
     
-    print(Mat)    
+    #print(Mat)    
 
     
     f.close()
@@ -22,7 +27,7 @@ def readInstance(filePath):
 def main():
     try:
         name = input("Qual Arquivo deseja Usar:")
-        vetor = readInstance("instancias/" + "dij10.txt")
+        vetor = readInstance("instancias/" + name)
         #os.system('cls') or None
 
         #print("Qual exemplo voce quer chamar? ")
