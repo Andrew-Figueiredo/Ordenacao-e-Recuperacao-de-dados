@@ -7,7 +7,7 @@ class Grafo():
 
 
     def swapPositions(A, pos1, pos2): 
-    A[pos1], A[pos2] = A[pos2], A[pos1] 
+        A[pos1], A[pos2] = A[pos2], A[pos1] 
     return A
     
 
@@ -46,6 +46,13 @@ class Grafo():
         size_heap = length
         for i in range(int(length/2), 0, -1):
             max_heapify(A,i,size_heap)
+        return length, size_heap
+
+    def build_min_heap(A):
+        length = len(A)-1
+        size_heap = length
+        for i in range(int(length/2), 0, -1):
+            min_heapify(A,i,size_heap)
         return length, size_heap
 
     def heapSort(A):
