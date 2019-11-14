@@ -1,19 +1,20 @@
+import Vertice
 
 class Grafo():
-    vertices = []
+    vertices = [Vertice]
 
     def __init__(self, vertices):
         self.vertices = vertices
 
 
-    def swapPositions(A, pos1, pos2): 
-        A[pos1], A[pos2] = A[pos2], A[pos1] 
-    return A
+    def swapPositions(self, pos1, pos2): 
+        self.vertices[pos1], self.vertices[pos2] =  self.vertices[pos2], self.vertices[pos1] 
+        
     
 
-    def max_heapify(A, i, size_heap ):
-        l = left(i)
-        r = right(i)
+    def max_heapify(self,A, i, size_heap ):
+        l = A.left(i)
+        r = A.right(i)
         if l <= size_heap and A[l] > A[i] :
             best = l
         else:
@@ -22,7 +23,7 @@ class Grafo():
         if r <= size_heap and A[r] > A[best] :
             best = r
         if best != i :
-            A = swapPositions(A,i,best)
+            A = self.swapPositions(A,i,best)
             max_heapify(A,best,size_heap)
         return A
 

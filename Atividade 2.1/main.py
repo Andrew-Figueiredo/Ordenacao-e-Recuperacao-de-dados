@@ -13,14 +13,14 @@ def readInstance(filePath):
         aux = []
         for j in range(i+1,size_vertices):
             if i!=j:
-                Mat[i][j] = int(l.split()[k])
+                Mat[i][j] = 1#int(l.split()[k])
                 k+=1
                 Mat[j][i] = Mat[i][j]
-                print(Mat[i][j])
+                
                 if Mat[i][j] != 0  :
                     aux.append(Mat[i,j])
         list_vizinhos.append(aux)                
-    
+    print(Mat)
     f.close()
     return size_vertices, Mat, list_vizinhos 
 
@@ -28,15 +28,7 @@ def main():
     try:
         name = input("Qual Arquivo deseja Usar:")
         size_vertices, Mat, list_vizinhos = readInstance("instancias/" + "dij10.txt")
-        os.system('cls') or None
-
-        print("Qual exemplo voce quer chamar? ")
-        print("1) Heap Máximo. ")
-        print("2) HeapSort ")
-
-        op = int(input("\nDigite aqui: "))
-        
-        os.system('cls') or None
+       
         
         
     except Exception as e:

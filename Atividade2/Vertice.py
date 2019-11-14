@@ -1,18 +1,23 @@
 class Vertice():
     dist = 0
     pai = 0
+    esquerdo = 0
+    direito = 0
     idHeap = 0
     
-    def __init__(self, dist, pai, idHeap):
+
+    def __init__(self, dist, pai, left, right, idHeap):
         self.dist = dist
-        self.pi = pi
         self.pai = pai
-    
-    def dad(i):
-        return int(i/2)
+        self.esquerdo = left
+        self.direito = right
+        self.idHeap = idHeap
 
-    def left(i):
-        return int(i*2)
+    def dad(self, i):
+        self.pai =  int(i/2)
 
-    def right(i):
-        return int(i*2 + 1)
+    def left(self, i):
+        self.esquerdo =  int(i*2)
+
+    def right(self, i):
+        self.direito = int(i*2 + 1)
