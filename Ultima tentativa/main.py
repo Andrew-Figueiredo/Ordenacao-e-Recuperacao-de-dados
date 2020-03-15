@@ -3,7 +3,7 @@ import os
 from Grafo import Grafo
 from Vertice import Vertice
 
-def readInstance(filePath):
+def readInstance(filePath): 
 
     f = open(filePath,"r")
     size_vertices = int(f.readline())
